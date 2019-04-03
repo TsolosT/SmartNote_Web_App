@@ -1,0 +1,32 @@
+html{
+	height:100%;
+}
+body{
+    background-image:url(../images/getstartedisws.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+}
+div h1 {
+padding-top: 5%;
+	
+}
+div p{
+	margin: 5% auto;
+	max-width: 600px;
+	min-width: 100px;
+}
+.guideImg{
+  max-width:20%;
+  max-height:20%;
+}
+@media(max-width:768px)
+{
+	.container-body
+	{
+		margin-top: 100px;
+	}
+}

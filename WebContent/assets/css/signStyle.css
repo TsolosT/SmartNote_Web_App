@@ -1,0 +1,133 @@
+@charset "UTF-8";
+html{
+	height:100%;
+}
+body{
+height:100%;
+	background-image:url(../images/mainimage.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+label{
+	float:left;
+	font-size:20px;
+	color:white;
+}
+.hlabel{
+	font-size:25px;
+	font-weight:bold;
+	margin:5% 30%;
+	color:white;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-login100 {
+  width: 1170px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;
+
+}
+
+/*==================================================================
+[ Form ]*/
+
+.login100-form {
+  width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 65px 40px 65px;
+  margin:5% auto;
+  border:1px solid black;
+  border-radius:5px;
+  background:black;
+  opacity: .7;
+}
+
+.login100-form-title {
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  color: #555555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+
+  width: 100%;
+  display: block;
+}
+
+
+@media (max-width: 992px) {
+  .login100-form {
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .login100-more {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login100-form {
+    width: 100%;
+  }
+
+  .login100-more {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+	.container-login100
+	{
+		margin-top:100px;
+	}
+	.hlabel {
+    margin: 5% 10%;
+	}
+  .rs1-wrap-input100,
+  .rs2-wrap-input100 {
+    width: 100%;
+  }
+
+  .rs2-wrap-input100 {
+    border-left: 1px solid #e6e6e6;
+  }
+}
+
+}

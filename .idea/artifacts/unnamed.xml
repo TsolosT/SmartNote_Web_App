@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="unnamed">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SmartNote_App_Version1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SmartNote_App_Version1" />
+          <element id="library" level="module" name="apache-tomcat-9.0.6" module-name="SmartNote_App_Version1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SmartNote_App_Version1/web/Web" />
+    </root>
+  </artifact>
+</component>

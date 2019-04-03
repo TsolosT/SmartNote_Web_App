@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="apache-tomcat-9.0.6" scope="COMPILE">
+		<srcroot url="file://$MODULE_DIR$/../../Java libs/tomcat v9.0 server/apache-tomcat-9.0.6/webapps/docs/appdev/sample/src"/>
+		<srcroot bind="false" url="file://$MODULE_DIR$/../../Java libs/tomcat v9.0 server/apache-tomcat-9.0.6/webapps/examples/WEB-INF/classes"/>
+		<srcroot bind="false" url="file://$MODULE_DIR$/../../Java libs/tomcat v9.0 server/apache-tomcat-9.0.6/webapps/examples/WEB-INF/jsp/applet"/>
+		<srcroot bind="false" url="file://$MODULE_DIR$/../../Java libs/tomcat v9.0 server/apache-tomcat-9.0.6/webapps/examples/jsp/plugin/applet"/>
+	</lib>
+</component>

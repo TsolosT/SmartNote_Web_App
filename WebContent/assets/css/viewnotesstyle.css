@@ -1,0 +1,402 @@
+html{
+	height:100%;
+}
+body{
+height:100%;
+background-image:url(../images/view.jpg);
+background-size: cover;
+background-position: center;
+padding-top: 100px;
+}
+hr{
+	margin:0;
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+select{
+	border-radius:3px;
+	margin-left:20px;
+	padding:3px;
+}
+label{
+	font-size:20px;
+}
+.nofoundmsg{
+	color:wheat;
+	font-size:30px;
+}
+.nofoundmsgP{
+	color:wheat;
+	font-size:20px;
+	padding-left:10px;
+}
+.edit{
+	background: none;
+	border:1px solid #008080;
+   	color:#008080;
+    height: 30px;
+    width: 60px;
+    margin: 3px 20px;
+    outline: none;
+    border-radius: 23px;
+}
+.edit:hover{
+background:#008080;
+color:white;
+cursor:pointer;
+}
+.download{
+	background: none;
+	border: 1px solid #1E90FF;
+	border-radius: 30px;
+	height: 30px;
+}
+.download:hover{
+background:#1E90FF;
+color:white;
+cursor:pointer;
+}
+.delete{
+	background: none;
+	border:1px solid #B22222;
+   	color:#B22222;
+    height: 30px;
+    width: 60px;
+    margin: 3px 20px;
+    outline: none;
+    border-radius: 23px;
+}
+.delete:hover{
+background:#B22222;
+color:white;
+cursor:pointer;
+}
+.showImg{
+	padding:20px;
+	
+}
+.showDoc{
+	padding:10px;
+}
+.showRec{
+	padding:10px;
+}
+.searchbox{
+	margin-top:5px;
+	margin-bottom:3px;
+}
+.btns-actions
+{
+	float: right;
+text-align: end;
+margin-right: 6px;
+}
+.searchbar{
+	width:60%;
+	display: initial;
+}
+.viewby{
+	text-align:right;
+}
+.searchbtn{
+background: rgba(15, 103, 191,0.5);
+color:#ccc;
+width:100px;
+height:30px;
+border:1px solid #0F67BF;
+font-size:18px;
+border-radius:4px;
+transition:.6s;
+overflow:hidden;
+}
+.searchbtn:focus{
+	outline:none;
+}
+.searchbtn:berfore{
+	content:'';
+	display:block;
+	position:absolute;
+	background:rbga(255,255,255,.5);
+	width:60px;
+	height:100%;
+	left:0;
+	top:0;
+	opacity:.5s;
+	filter:blur(30px);
+	transform:translateX(-130px) skew(-15deg);
+}
+.docfiles{
+	margin-left:3px;
+	text-decoration:underline;
+	color:#0F67BF;
+}
+.docfiles:hover{
+	background-color:#0F67BF;
+	color:white;
+}
+.recfiles{
+	margin-left:3px;
+	text-decoration:underline;
+	color:#008080;
+}
+.recfiles:hover{
+	background-color:#008080;
+	color:white;
+}
+.searchbtn:after{
+	content:'';
+	display:block;
+	position:absolute;
+	background:rbga(255,255,255,.2);
+	width:30px;
+	height:100%;
+	left:30px;
+	top:0;
+	opacity:0;
+	filter:blur(30px);
+	transform:translateX(-130px) scaleX(-15deg);
+}
+
+	
+.searchbtn:hover{
+	background:#0F67BF;
+	cursor:pointer;
+}
+.searchbtn:hover:before{
+	transform:translateX(300px) skewX(-15deg);
+	opacity:.6;
+	transition:.7;
+}
+.searchbtn:hover:after{
+	transform:translateX(300px) skewX(-15deg);
+	opacity:1;
+	transition:.7;
+}
+
+.noteArea{
+    padding:5px 5px 20px 2%;  
+    text-align:left;
+    border-style: none;
+    outline:none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* pop up windows*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 15%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+   background-color: rgb(220,220,220);
+    margin: 150px auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0;}
+    to {top:0; opacity:1;}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0;}
+    to {top:0; opacity:1;}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color:#FAEBD7;
+}
+
+.modal-body {
+
+    padding:0;
+    background-color: #FFFAFA;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #FAEBD7;
+}
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+.noteBox{
+	margin-top:20px;
+	overflow-y:scroll;
+}
+.noteBox .listBox,.listItems{
+  list-style:none;
+}
+.noteBox .listBox{
+  overflow:hidden;
+  padding:3em;
+}
+.noteBox .listBox .listItems .btnnotes{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+.noteBox .listBox .listItems{
+  margin:1em;
+  float:left;
+}
+.noteBox .listBox .listItems h2{
+  font-size:120%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.noteBox .listBox .listItems .btnnoteDate{
+
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+.noteBox .listBox .listItems .btnnotes{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+.noteBox .listBox .listItems:nth-child(even) .btnnotes{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+.noteBox .listBox .listItems:nth-child(3n) .btnnotes{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+.noteBox .listBox .listItems:nth-child(5n) .btnnotes{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+.noteBox .listBox .listItems .btnnotes:hover{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+.infomodal{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 15%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+}
+.info-modal-header{
+	 padding: 2px 16px;
+    background-color:#5F9EA0;
+}
+.info-modal-body{
+	 padding:0;
+}
+.info-modal-body ul{
+	text-align: left;
+}
+#noteDiv{
+	margin-top:4px;
+	background-color:#DCDCDC;
+	height:650px;
+	text-align:center;
+	overflow-y:scroll;
+}
+#newNote{
+	margin-top:3px;
+	background:rgba(0, 128, 64,.5) url(../images/add.png) center no-repeat;
+	float:right;
+	border:1px solid #008040;
+	height:50px;
+	width:60px;
+	outline:none;
+	border-radius:3px;
+	
+}
+#newNote:hover{
+	background:#008040 url(../images/add.png) center no-repeat;
+	cursor:pointer;
+}
+#infobtn{
+	margin-right:6px;
+	margin-top:3px;
+	background:rgba(15, 103, 191,0.5) url(../images/info-sign.png) center no-repeat;
+	height:50px;
+	width:60px;
+	outline:none;
+	border-radius:3px;
+	border:1px solid #0F67BF;
+	
+}
+#infobtn:hover{
+	background:#0F67BF url(../images/info-sign.png) center no-repeat;
+	cursor:pointer;
+}
