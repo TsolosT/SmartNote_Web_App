@@ -56,4 +56,9 @@ coming soon....
 * CSS,Bootstrap 3x
 * JS,Jquery
 
+Also 
+* Free images from unsplash 
+* Free icons from FontAwesome
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
