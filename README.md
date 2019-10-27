@@ -19,11 +19,6 @@ What things you need to install the software and how to install them
 * MySql 8x
 * JDK 9
 
-### Build & Run
-
-The command needed to compile/transpile the code into runnable code to the platform you're using
-
-coming soon....
 
 ### Demo
 
